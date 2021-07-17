@@ -14,7 +14,7 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
 
-app.use(cors());
+
 
 // Слушаем 3000 порт
 const PORT = 3000;
@@ -31,6 +31,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(requestLogger); // подключаем логгер запросов
+app.use(cors());
+
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
 
 app.post('/signin', celebrate({
   body: Joi.object().keys({
