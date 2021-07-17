@@ -13,8 +13,8 @@ const NotFoundError = require('./errors/404-not-found-err');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
+
 app.use(cors());
-app.options('*', cors());
 
 // Слушаем 3000 порт
 const PORT = 3000;
