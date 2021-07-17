@@ -96,6 +96,6 @@ export class Api {
 
 //////////////////////////////////
 export const api = new Api({
-  baseUrl: "http://serjo.nomoredomains.work/api",
+  baseUrl: "api.serjo.nomoredomains.monster",
 });
 export default api;
