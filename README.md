@@ -4,6 +4,6 @@
 Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 
 https://serjo.nomoredomains.work/ 
-https://serjo.nomoredomains.work/api
+https://api.serjo.nomoredomains.monster/
 84.201.166.64
 

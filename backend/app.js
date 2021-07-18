@@ -14,8 +14,6 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
 
-
-
 // Слушаем 3000 порт
 const PORT = 3000;
 mongoose.connect('mongodb://localhost:27017/mestodb', {

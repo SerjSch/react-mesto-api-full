@@ -96,6 +96,9 @@ export class Api {
 
 //////////////////////////////////
 export const api = new Api({
-  baseUrl: "api.serjo.nomoredomains.monster",
+  baseUrl: "https://api.serjo.nomoredomains.monster",
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 export default api;
