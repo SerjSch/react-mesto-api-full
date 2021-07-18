@@ -54,7 +54,9 @@ app.post('/signup', celebrate({
   }),
 }), createUser);
 
-app.use(auth);
+// app.use(auth);
+app.use('/users*', usersRouter); // запускаем
+app.use('/cards*', cardRouter); // запускаем
 app.use('/', usersRouter); // запускаем
 app.use('/', cardRouter); // запускаем
 
